@@ -16,3 +16,4 @@ requests-oauthlib==2.0.0
 sqlparse==0.5.0
 stripe==9.9.0
 urllib3==1.26.0
+dj-database-url==0.5.0
