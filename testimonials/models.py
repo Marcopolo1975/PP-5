@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 class Testimonial(models.Model):
     """Model for Testimonial"""
     name = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="testimonials")
+    User, on_delete=models.CASCADE, related_name="testimonials")
     title = models.CharField(max_length=200, unique=True)    
     body = models.TextField()
     created_on = models.DateTimeField(auto_now=True)
