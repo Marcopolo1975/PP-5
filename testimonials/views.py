@@ -1,4 +1,4 @@
-"""Service Views"""
+"""testimonials Views"""
 
 from django.views import generic
 from django.contrib import messages
