@@ -57,8 +57,10 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #50da50;
-    color: white;
+    border: 1px solid #50da50;
+      background: transparent;
+      color: #50da50
+      
 }
 
 .text-black {
@@ -176,12 +178,18 @@ input[name='q']::placeholder {
 
 .card {
    border-color:rgb(214, 221, 227);
+   border-radius: .50rem;
 }
 
 .card:hover {
     border: 1px solid #50da50;
       background: transparent;
       color: #50da50; 
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) 
+}
+
+.card-img-top {
+    border-radius: 10px;
 }
 
 /* -------------------------------- Media Queries */
