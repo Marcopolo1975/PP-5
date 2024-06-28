@@ -14,7 +14,7 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
-<div class="container">
+<div class="container bg-white">
     <div class="row">
         <div class="col-12">
             <h1 class="text-center pt-4">Add Testimonial</h1>
@@ -26,8 +26,8 @@
             <form method="post" enctype="multipart/form-data">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <button type="submit" class="btn btn-outline-dark border-gold rounded-0">Add Testimonial</button>
-                <a class="btn btn btn-outline-dark border-gold rounded-0 m-2"
+                <button type="submit" class="btn-black btn">Add Testimonial</button>
+                <a class="btn-black btn m-2"
                     href="{%  url 'testimonials' %}">Cancel</a>
             </form>
         </div>

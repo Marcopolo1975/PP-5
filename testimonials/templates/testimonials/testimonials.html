@@ -12,14 +12,14 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container bg-white">
     <div class="row">
         <div class="col-12">
             <h1 class="text-center pt-4">Testimonials</h1>
         </div>
         <div class="col-12">
             <div class="pt-3 text-center">
-                <a href="{% url 'add_testimonial' %}" class="btn btn-sm gold-button py-2" aria-label="add-testimonial">
+                <a href="{% url 'add_testimonial' %}" class="btn-black btn" aria-label="add-testimonial">
                     Add Testimonial
                 </a>
             </div>
@@ -29,7 +29,7 @@
     <div class="container mb-4">
         <div class="card-columns">
             {% for testimonial in testimonial_list  %}
-            <div class="card my-3 testimonial-bg border-0">
+            <div class="card my-3 testimonial-bg">
                 <div class="text-center quote">
                     <i class="fas fa-quote-right"></i>
                     <h3 class="text-center"><strong>{{ testimonial.title }}</strong></h3>
