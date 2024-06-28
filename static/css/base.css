@@ -176,6 +176,7 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* Products card section*/
 .card {
    border-color:rgb(214, 221, 227);
    border-radius: .50rem;
@@ -190,6 +191,15 @@ input[name='q']::placeholder {
 
 .card-img-top {
     border-radius: 10px;
+}
+
+/* Reviews section*/
+.review-image {
+    width: 150px;
+}
+
+.fas {
+    color: gold;
 }
 
 /* -------------------------------- Media Queries */
