@@ -27,23 +27,23 @@
          <p>"{{ review.review_title}}"</p>
          <span>
          {% if review.product_rating == 5 %}
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
+         <i class="star star fas fa-star"></i>
+         <i class="star fas fa-star"></i>
+         <i class="star fas fa-star"></i>
+         <i class="star fas fa-star"></i>
+         <i class="star fas fa-star"></i>
          {% elif review.product_rating == 4 %}
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star text-dark"></i>
+         <i class="star fas fa-star"></i>
+         <i class="star fas fa-star"></i>
+         <i class="star fas fa-star"></i>
+         <i class="star fas fa-star"></i>
+         <i class="star fas fa-star text-dark"></i>
          {% else%}
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star"></i>
-         <i class="fas fa-star text-dark"></i>
-         <i class="fas fa-star text-dark"></i>
+         <i class="star fas fa-star"></i>
+         <i class="star fas fa-star"></i>
+         <i class="star fas fa-star"></i>
+         <i class="star fas fa-star text-dark"></i>
+         <i class="star fas fa-star text-dark"></i>
          {% endif %}
          </span>
          <p class="mt-2"><i class="fa fa-clock interactive-color"></i> Reviewed on: {{ review.timestamp | date:"D d M Y" }}</p>
