@@ -12,8 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 import dj_database_url
-if os.path.isfile('env.py'):
-    import env
+if os.path.isfile('env.py'):import env
+SECRET_KEY = os.environ.get("SECRET_KEY")
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -22,12 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!#onyi_l*2oams#7tzt-1r09-aebw5dzk5$xn10-hyndh^q(_2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '8000-marcopolo1975-eshop-q9lvypusr7m.ws.codeinstitute-ide.net', 'localhost']
+ALLOWED_HOSTS = ['8000-marcopolo1975-eshop-mitdpwqvh66.ws.codeinstitute-ide.net', 'localhost']
 
 
 # Application definition
