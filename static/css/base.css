@@ -27,10 +27,18 @@ body {
     width: fit-content;
 }
 
+.alert {
+    background-color: #1ee70b4d;
+    color: #fd5f00;
+    font-size: 30px;;
+    
+}
+
 .shop-now-button {
-    background: #45bb45;
+    background: #fd5f00;
     color: white;
     min-width: 260px;
+    border-radius: 20px;
 }
 
 .btn-black {
@@ -57,9 +65,9 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    border: 1px solid #50da50;
+    border: 1px solid #fd5f00;
       background: transparent;
-      color: #50da50
+      color: #fd5f00
       
 }
 
@@ -183,9 +191,9 @@ input[name='q']::placeholder {
 }
 
 .card:hover {
-    border: 1px solid #50da50;
+    border: 1px solid #fd5f00;
       background: transparent;
-      color: #50da50; 
+      color: #fd5f00; 
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) 
 }
 
