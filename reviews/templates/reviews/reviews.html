@@ -59,8 +59,8 @@
          </div>
          {% if user.is_authenticated and user.username == review.name or user.is_superuser %}
          <div class="text-center mt-3">
-            <a href="edit_review/{{review.id}}" aria-label="Go to edit review {{review.id}} page" class="btn-black btn m-2">Edit</a>
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+            <a href="edit_review/{{review.id}}" aria-label="Go to edit review {{review.id}} page" class="btn btn-secondary mb-3">Edit</a>
+            <button type="button" class="btn btn-danger mb-3" data-bs-toggle="modal"
                data-bs-target="#delete-review-{{review.id}}" aria-label="Delete">Delete</button>
          </div>
          <!-- Delete review bootstrap modal-->
@@ -74,7 +74,7 @@
                      Are you sure you want to delete your review?
                   </div>
                   <div class="modal-footer">
-                     <button type="button" class="btn-black btn"
+                     <button type="button" class="btn btn-secondary"
                         data-bs-dismiss="modal" aria-label="Close Modal">Close</button>
                      <a href="delete_review/{{review.id}}" aria-label="Delete review {{review.id}}" class="btn btn-danger">Delete</a>
                   </div>

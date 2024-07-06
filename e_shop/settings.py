@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-marcopolo1975-eshop-mitdpwqvh66.ws.codeinstitute-ide.net', 'localhost']
+ALLOWED_HOSTS = ['8000-marcopolo1975-eshop-kfp2w2jtexd.ws.codeinstitute-ide.net', 'localhost']
 
 
 # Application definition
