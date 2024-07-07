@@ -187,7 +187,7 @@ input[name='q']::placeholder {
 /* Products card section*/
 .card {
    border-color:rgb(214, 221, 227);
-   border-radius: .50rem;
+   border-radius: .60rem;
 }
 
 .card:hover {
