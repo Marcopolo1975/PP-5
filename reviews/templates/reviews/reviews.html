@@ -12,17 +12,29 @@
 {% endblock %}
 
 {% block content %}
+
+
 <!-- REVIEWS SECTION -->
 <section id="reviews" class="container mt-5 bg-white">
    <div class="row p-3">
       <!-- Vertical Banner -->
       {% include "includes/banner_vertical.html" %}
    </div>
-   <div class="col-md-8">
+   <div class="col">
       <h2 class="sub-title">Customers Reviews</h2>
+      {% if user.is_authenticated or user.is_superuser %}
+      <div class="col">
+         <div class="pt-3 text-center">
+             <a href="{% url 'add_review' %}" class="btn-black btn" aria-label="add-review">
+               Add Review</a>
+      </div>
       <hr>
+      {% else %}
+      
+      {% endif %}
+      <div class="card-columns">
       {% for review in reviews_list %}
-      <div class="review-box">
+      <div class="card h-100  shadow p-3 bg-white rounded">
          <p><i class="fas fa-user fa-lg interactive-color"></i> {{ review.name  | slice:":10" }}</p>
          <p>"{{ review.review_title}}"</p>
          <span>
@@ -82,10 +94,10 @@
          </div>
          {% endif %}
       </div>
-      <hr>
       {% endfor %}
    </div>
    </div>
+</div>
 </section>
 <!-- END OF REVIEWS SECTION -->
 {% endblock %}
