@@ -28,8 +28,7 @@ class AddReview(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Reviews
     form_class = ReviewsForm
     template_name = "reviews/add_edit_review.html"
-    success_message = """Your Review was sent successfully
-                            and is awaiting approval!"""
+    success_message = """Your Review was Added successfully!"""
 
     def form_valid(self, form):
         form.instance.name = self.request.user

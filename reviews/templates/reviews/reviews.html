@@ -60,8 +60,7 @@
          {% if user.is_authenticated and user.username == review.name or user.is_superuser %}
          <div class="text-center mt-3">
             <a href="edit_review/{{review.id}}" aria-label="Go to edit review {{review.id}} page" class="btn btn-secondary mb-3">Edit</a>
-            <button type="button" class="btn btn-danger mb-3" data-bs-toggle="modal"
-               data-bs-target="#delete-review-{{review.id}}" aria-label="Delete">Delete</button>
+            <a href="delete_review/{{review.id}}" aria-label="Delete review {{review.id}}" class="btn btn-danger mb-3">Delete</a>
          </div>
          <!-- Delete review bootstrap modal-->
          <div class="modal fade" id="delete-review-{{review.id}}" tabindex="-1" aria-hidden="true">

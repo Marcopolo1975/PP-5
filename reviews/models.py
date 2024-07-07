@@ -21,7 +21,7 @@ class Reviews(models.Model):
     product_rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True
     )
-    approved = models.BooleanField(default=False)
+    approved = models.BooleanField(default=True)
     carousel_review = models.BooleanField(default=False)
 
     def __str__(self):
