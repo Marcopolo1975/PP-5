@@ -210,6 +210,18 @@ input[name='q']::placeholder {
     color: gold;
 }
 
+/*******************************
+*                              *
+*           FOOTER             *
+*                              *
+*******************************/
+.text-footer {
+    color: #fd5f00;
+}
+footer p {
+    color: #fd5f00
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
