@@ -222,6 +222,14 @@ footer p {
     color: #fd5f00
 }
 
+.credid-cards-box {
+    margin-top: 25px;
+}
+
+.credid-cards-box img {
+    width: 50px;
+    height: auto;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
