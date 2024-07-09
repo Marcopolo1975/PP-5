@@ -232,6 +232,30 @@ footer p {
     width: 50px;
     height: auto;
 }
+
+.button-signup {
+    border: 1px solid #fd5f00;
+    background: transparent;
+    color: #fd5f00;
+    width: 200px;
+}
+
+.button-signup:hover,
+.btn-primary:hover {
+    border: 1px solid #fd5f00;
+    background:#fd5f00;
+    color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .10)
+}
+
+.btn-primary {
+    border: 1px solid #fd5f00;
+    color:#fd5f00 ;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
