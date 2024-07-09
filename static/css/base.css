@@ -241,14 +241,14 @@ footer p {
 }
 
 .button-signup:hover,
-.btn-primary:hover {
+.btn-outline-light:hover {
     border: 1px solid #fd5f00;
     background:#fd5f00;
     color: white;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .10)
 }
 
-.btn-primary {
+.btn-outline-light {
     border: 1px solid #fd5f00;
     color:#fd5f00 ;
     background: transparent;
