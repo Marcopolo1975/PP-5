@@ -76,9 +76,7 @@
                {% if user.is_authenticated or user.is_superuser %}
                <a href="{% url 'add_review' %}" aria-label="Go to the add reviews page" class="dropdown-item">Add Review</a>
                {% else %}
-               {% endif %}
-               <a href="/" class="dropdown-item" target="_blank" rel="noopener">Privacy Policy</a>
-               
+               {% endif %}   
             </div>
     </li>
     </ul>
