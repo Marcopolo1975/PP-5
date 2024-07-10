@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-marcopolo1975-eshop-s7hnqft14k0.ws.codeinstitute-ide.net', 'localhost']
+ALLOWED_HOSTS = ['localhost', ".herokuapp.com", 'e-shop-app.herokuapp.com','8000-marcopolo1975-eshop-s7hnqft14k0.ws.codeinstitute-ide.net', 'localhost']
 
 
 # Application definition
@@ -129,9 +129,17 @@ WSGI_APPLICATION = 'e_shop.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-}
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
