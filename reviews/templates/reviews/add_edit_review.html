@@ -11,6 +11,7 @@
 {% endblock %}
 {% block content %}
 <!-- ADD/UPDATE REVIEWS SECTION -->
+<div class="overlay"></div>
 <div id="add_review" class="edit-comments">
    <div class="container bg-white">
       <div class="row p-3">
@@ -55,11 +56,6 @@
                {{ field }}
                {% endif %}
                {% endfor %}
-            <div class="text-center">
-                  <button class="btn-black btn right mb-4" type="submit" value="Save" aria-label="Submit Review">
-                  Submit
-                  </button>
-               </div>
             </form>
          </div>
       </div>

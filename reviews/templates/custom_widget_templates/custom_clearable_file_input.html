@@ -15,5 +15,10 @@
 <span class="btn-black btn btn-file">
     Select Image <input id="new-image" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
 </span>
+<span>
+    <button class="btn-black btn right m-3" type="submit" value="Save" aria-label="Submit Review">
+        Submit
+    </button>
+</span>
 <p><strong class="text-danger" id="filename"></strong></p>
 <!-- END OF IMAGE WIDGET SECTION -->
