@@ -12,7 +12,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="container pb-5">
+<div class="container rounded pb-5 mb-4" style="border:1px solid #cecece;">
     <div class="row">
         <div class="col-12">
             <h1 class="text-center pt-4">Enquiry</h1>
@@ -45,8 +45,8 @@
                     </tr>
                 </tbody>
             </table>
-            <a class="btn btn btn-outline-dark border-gold rounded-0 m-2" href="{%  url 'enquiries' %}">Back</a>
-            <a class="btn btn btn-outline-dark border-gold rounded-0 m-2"
+            <a class="btn btn btn-secondary rounded-2 m-2" href="{%  url 'enquiries' %}">Back</a>
+            <a class="btn btn btn-danger rounded-2 m-2"
                 href="{% url 'delete_enquiry' contact.id %}">Delete</a>
         </div>
     </div>
