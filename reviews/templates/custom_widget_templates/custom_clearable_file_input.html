@@ -12,11 +12,11 @@
     {% endif %}<br>
     {{ widget.input_text }}
 {% endif %}
-<span class="btn-black btn btn-file">
+<span class="btn-secondary btn btn-file">
     Select Image <input id="new-image" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
 </span>
 <span>
-    <button class="btn-black btn right m-3" type="submit" value="Save" aria-label="Submit Review">
+    <button class="btn-success btn right m-3" type="submit" value="Save" aria-label="Submit Review">
         Submit
     </button>
 </span>
