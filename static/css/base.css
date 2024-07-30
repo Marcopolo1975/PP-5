@@ -14,7 +14,7 @@ body {
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    background-image: url('/media/homepage_background_cropped.webp');
+    background-image: url('https://s3.amazonaws.com/e.shop/media/homepage_background_cropped.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
