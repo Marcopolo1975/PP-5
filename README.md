@@ -122,3 +122,115 @@ The following user stories were scoped out of the project due to time constraint
 
 - As a shopper, I can add products to my saved items so that I can go back and view them at a later date.
 - As a shopper, I can view my saved products so I can find them easily in the one location.
+
+
+### Design
+
+The site has a vibrant and clean design with the use of Orange and white color combination to give the idea of luxury and opulence. 
+#### Colour Scheme
+Colour palette from Coolors
+
+![Colour Scheme](docs/readme_images/colour_scheme.png)
+
+The colour scheme of the site is mainly Orange and White. The colours chosen are quite neutral in order to showcase the Products with minimal distraction. 
+
+Great care was taken to establish a good contrast between background colours and text at all times to ensure maximum user accessibility.
+
+#### Imagery
+There is only one main static image on the site which is of a laptop and a shopping Cart on the home page. The color scheme of the site makes a good contrast with the main homepage image which largely consists of orange and White. The rest of the imagery will be uploaded by the site owner for individual products. 
+
+#### Fonts
+The Lato font is the main font used for the body of the website. This font was imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
+
+#### Wireframes
+
+<details>
+
+ <summary>Home Page</summary>
+
+![Home Page](docs/wireframes/home.png)
+</details>
+
+<details>
+
+ <summary>Products Page</summary>
+
+![Home Decor](docs/wireframes/home_decor.png)
+</details>
+
+<details>
+
+ <summary>Product Details Page</summary>
+
+![Interior Design Services](docs/wireframes/interior_design_services.png)
+</details>
+
+<details>
+
+ <summary>Customers Reviews</summary>
+
+![Interior Design Projects](docs/wireframes/interior_design_projects.png)
+</details>
+
+<details>
+
+ <summary>Testimonials</summary>
+
+![Testimonials](docs/wireframes/testimonials.png)
+</details>
+
+<details>
+
+ <summary>Contact</summary>
+
+![Contact](docs/wireframes/contact.png)
+</details>
+
+<details>
+
+ <summary>Bag</summary>
+
+![Bag](docs/wireframes/shopping_bag.png)
+</details>
+
+<details>
+
+ <summary>Checkout</summary>
+
+![Checkout](docs/wireframes/checkout.png)
+</details>
+
+<details>
+
+ <summary>Order Confirmation</summary>
+
+![Order Confirmation](docs/wireframes/order_confirmation.png)
+</details>
+
+<details>
+
+ <summary>Enquiries</summary>
+
+![Enquiries](docs/wireframes/enquiries.png)
+</details>
+
+<details>
+
+ <summary>Profile</summary>
+
+![Profile](docs/wireframes/profile.png)
+</details>
+
+<details>
+
+ <summary>Product Management</summary>
+
+![Product Management](docs/wireframes/product_management.png)
+</details>
+
+<details>
+
+ <summary></summary>
+
+![Design Services Management](docs/wireframes/design_service_management.png)
+</details>
