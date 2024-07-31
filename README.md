@@ -1,114 +1,124 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# E Shop
 
-Welcome Rehan Ahmad Rai,
+E Shop is an e-commerce store . The site is targeted towards users who want to shop conveniently from home and get the products delivered to home.
+The site provides a seamless online shopping experience, offering a wide range of high-quality products at competitive prices.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Users can browse and purchase a wide range of products or check out the different types of Products and make an enquiry. They can also look at images and testimonials of other Customers or leave a testimonial if they wish.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 28, 2024**
+The payment system uses Stripe. Please note that this website is for educational purposes do not enter any personal credit/debit card details when using the site.
 
-## Gitpod Reminders
+To test this system, test card details can be used. A list of these can be found in Stripe's documentation [here](https://stripe.com/docs/testing#cards).
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The live link can be found here - [E Shop](https://e-shop-app-0892571914c8.herokuapp.com/)
 
-`python3 -m http.server`
+![Site Mockup](docs/readme_images/site_mockup.png)
 
-A blue button should appear to click: _Make Public_,
+- [User Experience (UX)](#user-experience--ux-)
+  * [User Stories](#user-stories)
+  * [Design](#design)
+    + [Colour Scheme](#colour-scheme)
+    + [Imagery](#imagery)
+    + [Fonts](#fonts)
+    + [Wireframes](#wireframes)
+- [Agile Methodology](#agile-methodology)
+- [Database Schema](#database-schema)
+- [Security Features and Defensive Design](#security-features-and-defensive-design)
+  * [User Authentication](#user-authentication)
+  * [Form Validation](#form-validation)
+  * [Database Security](#database-security)
+  * [Custom error pages:](#custom-error-pages-)
+- [Features](#features)
+  * [Header](#header)
+  * [Footer](#footer)
+  * [Home Page](#home-page)
+  * [User Account Pages](#user-account-pages)
+  * [Profile](#profile)
+  * [Home Decor (Products)](#home-decor--products-)
+  * [Product Detail](#product-detail)
+  * [Home Decor Management](#home-decor-management)
+  * [Bag](#bag)
+  * [Checkout](#checkout)
+  * [Interior Design Services](#interior-design-services)
+  * [Design Services Management](#design-services-management)
+  * [Interior Design Projects](#interior-design-projects)
+  * [Previous Projects Management](#previous-projects-management)
+  * [Testimonials](#testimonials)
+  * [Contact Form](#contact-form)
+  * [Enquiries Dashboard](#enquiries-dashboard)
+  * [Error Pages](#error-pages)
+- [Business Model](#business-model)
+- [Marketing Strategy](#marketing-strategy)
+  * [SEO](#seo)
+  * [Content marketing](#content-marketing)
+  * [Social Media Marketing](#social-media-marketing)
+  * [Email Marketing](#email-marketing)
+- [Testing](#testing)
+- [Deployment - Heroku](#deployment---heroku)
+- [AWS Set Up](#aws-set-up)
+- [Forking this repository](#forking-this-repository)
+- [Cloning this repository](#cloning-this-repository)
+- [Languages](#languages)
+- [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+- [Credits](#credits)
+- [Acknowledgments](#acknowledgments)
 
-Another blue button should appear to click: _Open Browser_.
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## User Experience (UX)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+A visitor to E Shop would be someone who is most likely an adult who is interested in buying Quality products at reasonable prices conviniantly.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### User Stories
 
-------
+#### EPIC | Viewing and Navigation
+- As a Site User, I can intuitively navigate around the site so that I can find content.
+- As a Site User, I can view a list of products so that I can select a product to view.
+- As a shopper, I can click on a product so that I can read the full product details.
+- As a shopper, I can view a specific category of products so I can browse the type of products I'm looking for.
+- As a shopper, I can search all products so that I can find what I am looking for.
+- As a shopper, I can sort all products so that I can view products based on price or title.
+- As a site user, I can view a list of Products so I can understand the quality and discription of the Product and make an enquiry if desired.
+- As a site user, I can read testimonials left by other customers so I see what feedback they gave to their shopping experience with the store.
+- As a site user, I can view pictures and the read the Views of other customers about the products and overall shopping experience with the Store so that I can      see quality of the products and credibility of the store and build trust on the Store.
 
-## Release History
+#### EPIC | User Account and Profile
+- As a site user, I can register an account so that I can have a personal account.
+- As a site user, I can log in or log out of my account so that I can keep my account secure.
+- As a site user, I can see my login status so that I know if I'm logged in or out.
+- As a site user, I can save my personal details in my user profile so that I do not have to fill them out for future orders.
+- As a site user, I can view my order history so that I can remember what purchases I've made.
+- As a site user, I can recover my password in case I forget it so that I can recover access to my account.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### EPIC | Purchasing
+- As a shopper, I can add a number of products in different quantities to my shopping bag so that I can purchase them all together when I am ready.
+- As a shopper, I can view a running total of my shopping bag as I am shopping so that I can see how much it costs in total.
+- As a shopper, I can view the contents of my shopping bag at any time so I can see what is included and the total cost.
+- As a shopper, I can adjust the quantity of individual products in my bag so that I can easily make changes before I purchase.
+- As a shopper, I can see a summary of my shopping cart when I checkout so that I know what products are included and the total cost before I commit to purchasing.
+- As a shopper, I can easily enter my payment information securely so that I can purchase my chosen products quickly with no issues.
+- As a shopper checkout as a guest so I don't have to sign up for an account.
+- As a shopper, I can view an order confirmation after checkout so that I know my purchase was successful.
+- As a shopper, I can receive an email confirmation of my order so that I have a record of my purchase.
 
-**May 28 2024:** Fix Mongo and Links installs
 
-**April 26 2024:** Update node version to 16
+#### EPIC | Admin & Store Management
+- As a store owner, I can add/edit/delete products through an easy-to-use interface so that I can manage the store's contents.
+- As a site owner, I can view/read/ customer reviews through an easy-to-use interface so that I can manage the site's contents.
+- As a site owner, I can add/delete images and description of products so that I can manage the site's contents.
+- As a site owner, I can view, read, Reply and delete customer enquiries on The webpage without going to Admin page.
 
-**September 20 2023:** Update Python version to 3.9.17.
+#### EPIC | User Interaction
+- As a site user, I can submit an enquiry form so that I can enquire about a Product.
+- As a site user, I can add / edit / delete a testimonial in relation to my perchase experience so that I can give my feedback.
+- As a site user, I can add / edit / delete a review and give Rating to Products so that I can express my satisfaction about a product and the Store.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### User stories not yet implemented
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" on the project board on Github. It is intended that these user stories will be implemented at a later date.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- As a shopper, I can add products to my saved items so that I can go back and view them at a later date.
+- As a shopper, I can view my saved products so I can find them easily in the one location.
