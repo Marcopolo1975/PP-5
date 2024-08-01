@@ -612,7 +612,9 @@ An initial list of topics and keywords generated can be seen below. This list wa
 
 The most relevant keywords have been added to the site's meta-keywords and meta-description. These keywords have also been carefully included in page titles, headings, site content, `<strong></strong>` tags, image alt attributes and anchor tag links across the site. 
 
- ![Keywords](docs/readme_images/seo_keywords.png)
+
+
+ ![Keywords](docs/readme_images/keywords-table.png)
 
 **External Links:**
 
