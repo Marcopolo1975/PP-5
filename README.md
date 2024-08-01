@@ -151,7 +151,7 @@ The Lato font is the main font used for the body of the website. This font was i
 
  <summary>Product Details Page</summary>
 
-![Product Details](docs/wireframes/interior_design_services.png)
+![Product Details](docs/wireframes/Product-details.png)
 </details>
 
 <details>
@@ -180,7 +180,7 @@ The Lato font is the main font used for the body of the website. This font was i
 
  <summary>Bag</summary>
 
-![Bag](docs/wireframes/shopping_bag.png)
+![Shopping Bag](docs/wireframes/shopping-bag.png)
 </details>
 
 <details>
@@ -194,7 +194,7 @@ The Lato font is the main font used for the body of the website. This font was i
 
  <summary>Order Confirmation</summary>
 
-![Order Confirmation](docs/wireframes/order_confirmation.png)
+![Order Confirmation](docs/wireframes/order-confirmation.png)
 </details>
 
 <details>
@@ -217,6 +217,13 @@ The Lato font is the main font used for the body of the website. This font was i
  <summary>Product Management</summary>
 
 ![Product Management](docs/wireframes/Products-manage-page.png)
+</details>
+
+<details>
+
+ <summary>Sign Up </summary>
+
+![Sign Up](docs/wireframes/signup.png)
 </details>
 
 <details>
