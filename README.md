@@ -378,7 +378,7 @@ Custom Error Pages were created to give the user more information on the error a
 - When clicking the 'All products' link in the navbar the dropdown menu will show all the different categories.
 
 ![Categories](docs/readme_images/features/categories.png)
-- The 'All' link will display a list of all products from the database.
+- The 'All Products' link will display a list of all products from the database.
 - Clicking any of the categories will filter the products to only show products from the category selected.
 - The category selected will display as the page heading.
 
@@ -545,6 +545,41 @@ This page summarises the completed order.
 
 ![Enquiry Detail](docs/readme_images/features/enquiry_detail.png)
 - The site owner can choose to delete the enquiry or to go back to the list of enquiries.
+
+### Customer Reviews 
+
+![Reviews](docs/readme_images/features/testimonials.png)
+- The Reviews page can be accessed by clicking the link in the nav bar.
+- When the user navigates to the Reviews page they can see all Reviews left by previous Customers. 
+- Each Reviews displays the Topic they relate to, the date and the user's name.
+
+**Add Review**
+
+![Add Reviews](docs/readme_images/features/add_testimonial.png)
+- When a logged-in user clicks on the "Add Reviews" button on the Nav bar link under More, they can see a user-friendly form where they can add a new Reviews to the site.
+- If the user is not logged in they are redirected to the log-in page.
+- The completed Review is automatically populated with the user's username and date underneath the body.
+
+**Edit Review**
+
+![Edit Review](docs/readme_images/features/edit_testimonial.png)
+- The user is able to edit their own Reviews by clicking the edit button which display beside their own Reviews on the Reviews Page.
+- The edit form fields are pre-populated with the existing Review text.
+- If a user tries to update a Review (by changing the URL) without being signed in they are redirected to the log in page.
+- If a user tries to update another user's Review (by changing the url) they receive a custom 403 error.
+- The superuser can edit anyone's Reviews.
+- The user will receive a success message notifying them that the Review has been successfully updated.
+
+**Delete Review**
+
+![Delete Review](docs/readme_images/features/delete_testimonial.png)
+- The user can choose to delete their own Review by clicking the delete button which display beside their own Review on the Reviews Page.
+- The user is asked to confirm if they wish to delete the Review or cancel.
+- The user will receive a success message notifying them that the Review has been successfully deleted.
+- If a user tries to delete a Review (by changing the url) without being signed in they are redirected to the log in page.
+- If a user tries to delete another user's Review (by changing the url) they receive a custom 403 error.
+- The superuser can delete anyone's Reviews.
+
 
 ### Error Pages
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
