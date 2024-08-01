@@ -841,3 +841,19 @@ AWS_S3_OBJECT_PARAMETERS = {
 - Inside the folder, click 'Upload', 'Add files', and then select all the images that you are using for your site.
 - Then under 'Permissions' select the option 'Grant public-read access' and click upload.
 - Your static files and media files should be automatically linked from django to your S3 bucket.
+
+
+## Forking this repository
+- Locate the repository at this link [E Shop](https://github.com/).
+- At the top of the repository, on the right side of the page, select "Fork" from the buttons available. 
+- A copy of the repository is now created.
+
+## Cloning this repository
+To clone this repository follow the below steps: 
+
+1. Locate the repository at this link [E Shop](https://github.com/). 
+2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the prefered cloning option, and then copy the link provided. 
+3. Open **Terminal**.
+4. In Terminal, change the current working directory to the desired location of the cloned directory.
+5. Type **'git clone'**, and then paste the URL copied from GitHub earlier. 
+6. Type **'Enter'** to create the local clone. 
