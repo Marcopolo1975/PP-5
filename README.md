@@ -148,42 +148,36 @@ The Lato font is the main font used for the body of the website. This font was i
 
  <summary>Home Page</summary>
 
-![Home Page](docs/wireframes/home.png)
-</details>
-
-<details>
-
- <summary>Products Page</summary>
-
-![Home Decor](docs/wireframes/home_decor.png)
+![Home Page](docs/wireframes/landing-page.png)
 </details>
 
 <details>
 
  <summary>Product Details Page</summary>
 
-![Interior Design Services](docs/wireframes/interior_design_services.png)
+![Product Details](docs/wireframes/interior_design_services.png)
 </details>
 
 <details>
 
  <summary>Customers Reviews</summary>
 
-![Interior Design Projects](docs/wireframes/interior_design_projects.png)
+![Customers Reviews](docs/wireframes/reviews-page.png)
+![Customers Reviews](docs/wireframes/add-review-page.png)
 </details>
 
 <details>
 
  <summary>Testimonials</summary>
 
-![Testimonials](docs/wireframes/testimonials.png)
+![Testimonials](docs/wireframes/testimonials-Page.png)
 </details>
 
 <details>
 
  <summary>Contact</summary>
 
-![Contact](docs/wireframes/contact.png)
+![Contact](docs/wireframes/Contact-page.png)
 </details>
 
 <details>
@@ -211,26 +205,34 @@ The Lato font is the main font used for the body of the website. This font was i
 
  <summary>Enquiries</summary>
 
-![Enquiries](docs/wireframes/enquiries.png)
+![Enquiries](docs/wireframes/Enquiries-page.png)
+![Enquiries](docs/wireframes/enqury-page.png)
 </details>
 
 <details>
 
  <summary>Profile</summary>
 
-![Profile](docs/wireframes/profile.png)
+![Profile](docs/wireframes/profile-page.png)
 </details>
 
 <details>
 
  <summary>Product Management</summary>
 
-![Product Management](docs/wireframes/product_management.png)
+![Product Management](docs/wireframes/Products-manage-page.png)
 </details>
 
 <details>
 
- <summary></summary>
+ <summary>Log In</summary>
 
-![Design Services Management](docs/wireframes/design_service_management.png)
+![Log In](docs/wireframes/Login-Page.png)
+</details>
+
+<details>
+
+ <summary>Sign Out</summary>
+
+![Sign Out](docs/wireframes/signout-page.png)
 </details>
