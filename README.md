@@ -638,8 +638,8 @@ The site showcases high quality images of previous interior design projects proj
 ### Social Media Marketing 
 For this site, a Facebook business page has been created for organic social media marketing. The Facebook page includes a 'Shop Now' button which takes the user to the E Shop website. The page pairs well with the content media marketing on the main site as images of previous projects and new product arrivals can be shared easily.
 
-![Facebook Page](docs/readme_images/facebook_page.png)
-
+- [Facebook Page](https://www.facebook.com/profile.php?id=61563642210377)
+ ![Facebook Page](https://www.facebook.com/profile.php?id=61563642210377)
 ### Email Marketing
 Visitors to the site can sign up to the newsletter and do not need to have an account to do so. A signup box is included in the footer of the site. This allows the business to share news with customers and potential customers including new products/services and special offers. Mailchimp was used to create this service. 
 
