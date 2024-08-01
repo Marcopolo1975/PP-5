@@ -640,3 +640,81 @@ For this site, a Facebook business page has been created for organic social medi
 
 ### Email Marketing
 Visitors to the site can sign up to the newsletter and do not need to have an account to do so. A signup box is included in the footer of the site. This allows the business to share news with customers and potential customers including new products/services and special offers. Mailchimp was used to create this service. 
+
+
+
+## Testing
+Testing and results can be found [here](/TESTING.md)
+
+## Deployment - Heroku
+
+To deploy this page to Heroku from its GitHub repository, the following steps were taken:
+
+### Create the Heroku App:
+- Log in to [Heroku](https://dashboard.heroku.com/apps) or create an account.
+- On the main page click the button labelled New in the top right corner and from the drop-down menu select "Create New App".
+- Enter a unique and meaningful app name.
+- Next, select your region.
+- Click on the Create App button.
+
+### Attach the Postgres database:
+- In the Resources tab, under add-ons, type in Postgres and select the Heroku Postgres option.
+- Copy the DATABASE_URL located in Config Vars in the Settings Tab.
+- Go back to your IDE and install 2 more requirements:
+    - `pip3 install dj_databse_url`
+    - `pip3 install psycopg2-binary` 
+- Create requirements.txt file by typing `pip3 freeze --local > requirements.txt`
+- Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file. 
+- In settings.py file import dj_database_url, comment out the default configurations within database settings and add the following: 
+
+```
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
+```
+- Run migrations and create a superuser for the new database. 
+- Create an if statement in settings.py to run the postgres database when using the app on heroku or sqlite if not
+
+```
+    if 'DATABASE_URL' in os.environ:
+        DATABASES = {
+            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    else:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': BASE_DIR / 'db.sqlite3',
+            }
+    }
+```
+
+- Create requirements.txt file by typing `pip3 freeze --local > requirements.txt`
+- Create a file named "Procfile" in the main directory and add the following: `web: gunicorn project-name.wsgi:application`
+- Add Heroku to the ALLOWED_HOSTS list in settings.py in the format ['app_name.heroku.com', 'localhost']
+
+- Push these changes to Github.
+
+### Update Heroku Config Vars
+Add the following Config Vars in Heroku:
+
+|     Variable name     |                           Value/where to find value                           |
+|:---------------------:|:-----------------------------------------------------------------------------:|
+| AWS_ACCESS_KEY_ID     | AWS CSV file(instructions below)                                               |
+| AWS_SECRET_ACCESS_KEY | AWS CSV file(instructions below)                                               |
+| DATABASE_URL          | Postgres generated (as per step above)                                        |
+| EMAIL_HOST_PASS       | Password from email client                                                    |
+| EMAIL_HOST_USER       | Site's email address                                                          |
+| SECRET_KEY            | Random key generated as above                                                 |
+| STRIPE_PUBLIC_KEY     | Stripe Dashboard > Developers tab > API Keys > Publishable key                |
+| STRIPE_SECRET_KEY     | Stripe Dashboard > Developers tab > API Keys > Secret key                     |
+| STRIPE_WH_SECRET      | Stripe Dashboard > Developers tab > Webhooks > site endpoint > Signing secret |
+| USE_AWS               | True (when AWS set up - instructions below)                                   |
+
+### Deploy
+- NB: Ensure in Django settings, DEBUG is False
+- Go to the deploy tab on Heroku and connect to GitHub, then to the required repository. 
+- Scroll to the bottom of the deploy page and either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. Manually deployed branches will need re-deploying each time the repo is updated.
+- Click View to view the deployed site.
+
+The site is now live and operational.
