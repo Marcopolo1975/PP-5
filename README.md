@@ -876,7 +876,7 @@ To clone this repository follow the below steps:
 - [AWS](https://aws.amazon.com/?nc2=h_lg) used for file storage.
 - [Heroku](https://dashboard.heroku.com/login) - was used as the cloud based platform to deploy the site on.
 - [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of website on different devices.
-- [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
+- [Wireframepro](https://wireframepro.mockflow.com/) - Used to generate Wireframe images.
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
 - [Font Awesome](https://fontawesome.com/) - Used for icons in information bar.
 - [GitHub](https://github.com/) - Used for version control and agile tool.
