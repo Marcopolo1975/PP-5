@@ -230,10 +230,6 @@ input[name='q']::placeholder {
 *                              *
 *******************************/
 
-footer {
-    position: relative;
-    
-}
 .text-footer {
     color: #fd5f00;
 }
@@ -363,6 +359,7 @@ footer p {
     border-color: #dc3545;
     border-radius: 0;
 }
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
