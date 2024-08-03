@@ -229,6 +229,11 @@ input[name='q']::placeholder {
 *           FOOTER             *
 *                              *
 *******************************/
+
+footer {
+    position: relative;
+    
+}
 .text-footer {
     color: #fd5f00;
 }
@@ -405,6 +410,7 @@ footer p {
     .alert {
         font-size: 1rem;
         margin-left: 20px;
+        margin-bottom: 50px;
     }
 
     .shop-now-button {
@@ -429,5 +435,5 @@ footer p {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
-
+    
 }
