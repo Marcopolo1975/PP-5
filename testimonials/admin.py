@@ -8,7 +8,7 @@ class TestimonialAdmin(admin.ModelAdmin):
     """Allows admin to manage Testimonials via the admin panel"""
     list_display = (
         'name',
-        'title',
+        'product_name',
         'created_on'
     )
 
