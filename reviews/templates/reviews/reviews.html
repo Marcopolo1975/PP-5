@@ -36,7 +36,7 @@
       {% for review in reviews_list %}
       <div class="card h-100  shadow p-3 bg-white rounded">
          <p><i class="fas fa-user fa-lg interactive-color"></i> {{ review.name  | slice:":10" }}</p>
-         <p>"{{ review.review_title}}"</p>
+         <p>"{{ review.product_name}}"</p>
          <span>
          {% if review.product_rating == 5 %}
          <i class="star star fas fa-star"></i>

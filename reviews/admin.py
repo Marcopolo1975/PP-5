@@ -9,7 +9,7 @@ class ReviewsAdmin(admin.ModelAdmin):
     """
     list_display = (
         "name",
-        "review_title",
+        "product_name",
         "timestamp",
         "product_review",
         "product_rating",

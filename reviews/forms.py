@@ -10,7 +10,7 @@ class ReviewsForm(forms.ModelForm):
 
     class Meta:
         model = Reviews
-        fields = ("review_title", "product_review", "product_rating", "image")
+        fields = ("product_name", "product_review", "product_rating", "image")
 
     image = forms.ImageField(
         label="Image", required=False, widget=CustomClearableFileInput

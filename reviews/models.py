@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from products.models import Product
 
 
 class Reviews(models.Model):
@@ -10,7 +11,7 @@ class Reviews(models.Model):
     class Meta:
         verbose_name_plural = "Reviews"
 
-    review_title = models.CharField(max_length=100)
+   
     name = models.CharField(max_length=20)
     image = models.ImageField(
                               upload_to="reviews_images/",
@@ -21,6 +22,13 @@ class Reviews(models.Model):
     product_rating = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True
     )
+    featured_image_url = models.ForeignKey(
+        Product, on_delete=models.CASCADE,
+        related_name="products_image_url", null=True)
+    product_name = models.ForeignKey(
+        Product, on_delete=models.CASCADE,
+        related_name="product_name", null=True,
+        limit_choices_to={'orderlineitem__isnull': False})
     approved = models.BooleanField(default=True)
     carousel_review = models.BooleanField(default=False)
 
