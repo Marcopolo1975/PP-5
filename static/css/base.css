@@ -238,7 +238,7 @@ footer p {
 }
 
 .credid-cards-box {
-    margin-top: 25px;
+    margin-top: 1rem;
 }
 
 .credid-cards-box img {
@@ -270,12 +270,14 @@ footer p {
     border-radius: 50%;
 }
 
-.btn-outline-dark {
+/* External Links */
+
+.m-1.member-logo {
+    border: solid gray 1px;
+    border-radius: 5px;
+    padding: 5px;
     height: 40px;
-    width: 60px;
-    background-size: 50px 30px;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 70px;
 }
 /* -------------------------------- Media Queries */
 
