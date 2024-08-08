@@ -269,6 +269,14 @@ footer p {
     width: 40px;
     border-radius: 50%;
 }
+
+.btn-outline-dark {
+    height: 40px;
+    width: 60px;
+    background-size: 50px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
