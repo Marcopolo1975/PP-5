@@ -117,7 +117,7 @@ A visitor to E Shop would be someone who is most likely an adult who is interest
 The following user stories were scoped out of the project due to time constraints and labelled as "Won't Have" on the project board on Github. It is intended that these user stories will be implemented at a later date.
 
 - As a shopper, I can add products to my saved items so that I can go back and view them at a later date.
-- As a shopper, I can view my saved products so I can find them easily in the one location.
+- As a shopper, I can reset my password if I forget my login details so that I can recover my account and stored information
 
 
 ### Design
