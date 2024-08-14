@@ -149,6 +149,11 @@ The Lato font is the main font used for the body of the website. This font was i
 
 <details>
 
+ <summary>Products Page</summary>
+
+![Product Details](docs/wireframes/Product-details.png)
+</details>
+
  <summary>Product Details Page</summary>
 
 ![Product Details](docs/wireframes/Product-details.png)
