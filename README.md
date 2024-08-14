@@ -11,7 +11,7 @@ To test this system, test card details can be used. A list of these can be found
 
 The live link can be found here - [E Shop](https://e-shop-app-0892571914c8.herokuapp.com/)
 
-![Site Mockup](docs/readme_images/site_mockup.png)
+![Site Mockup](docs/readme_images/site-mockup.png)
 
 - [User Experience (UX)](#user-experience--ux-)
   * [User Stories](#user-stories)
