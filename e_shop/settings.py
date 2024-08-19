@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', ".herokuapp.com", 'e-shop-app.herokuapp.com', '8000-marcopolo1975-eshop-0w2dlvvnyhd.ws.codeinstitute-ide.net', 'localhost']
+ALLOWED_HOSTS = ['localhost', ".herokuapp.com", 'e-shop-app.herokuapp.com', '8000-marcopolo1975-eshop-4p99vsntq7x.ws.codeinstitute-ide.net', 'localhost']
 
 
 # Application definition
