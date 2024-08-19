@@ -305,7 +305,7 @@ footer p {
 
 .allauth-form-inner-content input {
     border-color: #000;
-    border-radius: 0;
+    
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -333,7 +333,7 @@ footer p {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
+    border-radius:.25rem ;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -433,15 +433,15 @@ footer p {
         margin-left: 20px;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-black.rounded-1,
+    .btn.btn-black.rounded-1 {
         padding: .375rem .375rem;
         
         
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-black.rounded-1.btn-lg,
+    .btn.btn-black.rounded-1.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
 
