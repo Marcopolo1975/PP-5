@@ -253,6 +253,7 @@
 
 - When a logged-in user clicks on the "Add Review" button on the Reviews page, they should see a user-friendly form where they can add a new Review to the site.
 
+![Reviews ](docs/readme_images/addreviewform.png)
 ![Reviews ](docs/readme_images/rewiewsubmit.png)
 ![Reviews ](docs/readme_images/rewiew-submitted.png)
 
