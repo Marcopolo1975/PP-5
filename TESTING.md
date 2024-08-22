@@ -271,8 +271,9 @@
 - The user should receive a success message when they have successfully added/edited/deleted a Review.
 
 ![Reviews ](docs/readme_images/reviewadded.png)
-![Reviews ](docs/readme_images/reviewdeleted.png)
 ![Reviews ](docs/readme_images/reviewupdated.png)
+![Reviews ](docs/readme_images/reviewdeleted.png)
+
 
 *As a user, I can sign up for the website's newsletter so that I can keep up to date with new products and promotions*
 - In the footer is a 'Newsletter' section. Here the user can input their email address to sign up.
