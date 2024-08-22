@@ -460,21 +460,39 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 | Bag Link                         | Click                         | Redirect to bag page                                         | Pass      |
 |                                  |                               |                                                              |           |
 | Main Nav                         |                               |                                                              |           |
-| Products Dropdown              | Click                         | Open Products dropdown                                     | Pass      |
-| All Link                         | Click                         | Redirect all products page                                   | Pass      |
+| Products Dropdown                | Click                         | Open Products dropdown                                       | Pass      |
+| All Products Link                | Click                         | Redirect all products page                                   | Pass      |
+| Clothing Dropdown                | Click                         | Open Clothes dropdown                                        | Pass      |
+| All Clothing Link                | Click                         | Redirect all Clothing page                                   | Pass      |
+| Actiwears and Esentials Link     | Click                         | Redirect Actiwears and Esentials page                        | Pass      |
+| Jeans Link                       | Click                         | Redirect all Jeans page                                      | Pass      |
+| Shirts Link                      | Click                         | Redirect all Shirts page                                     | Pass      |
+| Homeware Dropdown                | Click                         | Open Homeware dropdown                                       | Pass      |
+| All Homeware Link                | Click                         | Redirect all Homeware page                                   | Pass      |
+| Bed & Bath Link                  | Click                         | Redirect all Bed & Bath page                                 | Pass      |
+| Kitchen & Dining Link            | Click                         | Redirect all Kitchen & Dining page                           | Pass      |
+| Spacial Offers Dropdown          | Click                         | Open Spacial Offers dropdown                                 | Pass      |
+| All Spacials Link                | Click                         | Redirect all Spacials page                                   | Pass      |
+| New Arivals Link                 | Click                         | Redirect all New Arivals page                                | Pass      |
+| Deals Link                       | Click                         | Redirect all Deals page                                      | Pass      |
+| Clearance Link                   | Click                         | Redirect all Clearance page                                  | Pass      |
 | Testimonials Link                | Click                         | Open Testimonials Page                                       | Pass      |
-| Contact Link                     | Click                         | Open Contact Page                                            | Pass      |
+| Contact Dropdown                 | Click                         | Open Contact Dropdown                                        | Pass      |
+| Make an Enquiry Link             | Click                         | Open Enquiry Form                                            | Pass      |
+| More Link                        | Click                         | Open reviwes Dropdown                                        | Pass      |
+| Customers Reviews Link           | Click                         | Open Reviews Page                                            | Pass      |
+| Add Review Link                  | Click                         | Open add Review form                                       | Pass      |
+|                                  |                               |                                                              |           |
 | Hamburger Menu                   | Responsive                    | Display when screen size reduces to medium size              | Pass      |
 | Home Link                        | Click                         | Redirect to home                                             | Pass      |
-|                                  |                               | (Only displays when screen size reduces to medium size       | Pass      |
+|                                  |                               | (Only displays when screen size reduces to medium size)      | Pass      |
 | Footer                           |                               |                                                              |           |
 | Social Media Icon Links          | Click                         | Open correct location in new tab                             | Pass      |
 | Newsletter Email field           | Insert incorrect/empty format | On submit: form won't submit                                 | Pass      |
 | Newsletter Email field           | Insert incorrect/empty format | Error message displays                                       | Pass      |
 | Subscribe Button                 | Click                         | Form submit                                                  | Pass      |
 | Subscribe Button                 | Click                         | Message appears saying Thank You for subscribing!            | Pass      |
-| Products Link                  | Click                         | Open Products Page                                         | Pass      |
-| Contact Link                     | Click                         | Open Contact Page                                            | Pass      |
+| Enquiries Link                   | Click                         | Open Enquiry Form                                            | Pass      |
 | Client Testimonials Link         | Click                         | Open Testimonials Page                                       | Pass      |
 | Privacy Policy Link              | Click                         | Open Privacy Policy Page in new tab                          | Pass      |
 | Sponsor Image Links              | Click                         | Open correct location in new tab                             | Pass      |
@@ -567,7 +585,7 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 
 | Element                  | Action                    | Expected Result                                                                              | Pass/Fail |
 |--------------------------|---------------------------|----------------------------------------------------------------------------------------------|-----------|
-| Product Content          | Display                   | Display correct product image, excerpt, price, product details and dispatch time frame       | Pass      |
+| Product Content          | Display                   | Display correct product image, excerpt, price, product details.                              | Pass      |
 | Qty control buttons      | Click                     | Increase/decrease quantity                                                                   | Pass      |
 | Qty control buttons      | Click                     | Minus button disabled if quantity is 1                                                       | Pass      |
 | Qty control buttons      | Click                     | Plus button disabled if quantity is 99                                                       | Pass      |
