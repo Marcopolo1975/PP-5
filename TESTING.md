@@ -239,6 +239,44 @@
 
 ![Testimonials](docs/readme_images/testimonialspage.png)
 
+*As a site user, I can read Reviews left by other customers so I see what feedback they gave on the Products.
+
+
+- When the user clicks on the Reviews tab in the nav bar they are taken to a page displaying all the Reviews.
+
+![Reviews ](docs/readme_images/reviewslink.png)
+- Each Reviews should display the Products they relate to, the date and the user's name.
+
+![Reviews ](docs/readme_images/reviews.png)
+
+*As a site user, I can add / edit / delete a Review in relation to a Product I purchased so that I can give my feedback.
+
+- When a logged-in user clicks on the "Add Review" button on the Reviews page, they should see a user-friendly form where they can add a new Review to the site.
+
+![Reviews ](docs/readme_images/rewiewsubmit.png)
+![Reviews ](docs/readme_images/rewiew-submitted.png)
+
+- If the user is not logged in they should be redirected to the log-in page.
+- The user should be able to edit and delete their own Reviews from the Reviews Page.
+
+![Reviews ](docs/readme_images/reviewseditdelete.png)
+![Reviews ](docs/readme_images/editreview.png)
+![Reviews ](docs/readme_images/reviewupdated.png)
+
+![Reviews ](docs/readme_images/reviewupdated.png)
+
+
+- The add/edit forms should contain fields for all required information and should include form validation with helpful feedback if the form is invalid.
+- Their completed Review should be automatically populated with their username and date underneath the body.
+
+![Reviews ](docs/readme_images/reviews.png)
+
+- The user should receive a success message when they have successfully added/edited/deleted a Review.
+
+![Reviews ](docs/readme_images/reviewadded.png)
+![Reviews ](docs/readme_images/reviewdeleted.png)
+![Reviews ](docs/readme_images/reviewupdated.png)
+
 *As a user, I can sign up for the website's newsletter so that I can keep up to date with new products and promotions*
 - In the footer is a 'Newsletter' section. Here the user can input their email address to sign up.
 
