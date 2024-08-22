@@ -262,10 +262,6 @@
 
 ![Reviews ](docs/readme_images/reviewseditdelete.png)
 ![Reviews ](docs/readme_images/editreview.png)
-![Reviews ](docs/readme_images/reviewupdated.png)
-
-![Reviews ](docs/readme_images/reviewupdated.png)
-
 
 - The add/edit forms should contain fields for all required information and should include form validation with helpful feedback if the form is invalid.
 - Their completed Review should be automatically populated with their username and date underneath the body.
