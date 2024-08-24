@@ -669,9 +669,11 @@ The most relevant keywords have been added to the site's meta-keywords and meta-
 
 
 
- ![Keywords](docs/readme_images/keywords-table.png)
+ ![Keywords](docs/readme_images/keywords.png)
 
 **External Links:**
+
+![Keywords](docs/readme_images/external-links.png)
 
 Included in the site footer are links to other high quality relevant websites including Houzz, Institute of Designers Ireland, and The Interiors Association. These links show search engines that the page is of good quality improving the site's ranking further. 
 
