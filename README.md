@@ -13,6 +13,8 @@ The live link can be found here - [E Shop](https://e-shop-app-0892571914c8.herok
 
 ![Site Mockup](docs/readme_images/site-mockup.png)
 
+# Table of Content
+
 - [User Experience (UX)](#user-experience--ux-)
   * [User Stories](#user-stories)
   * [Design](#design)
