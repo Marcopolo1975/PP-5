@@ -285,19 +285,24 @@ Custom Error Pages were created to give the user more information on the error a
 ## Features
 
 ### Header
-![header](docs/readme_images/features/header.png)
 
 **Logo**
+
+![headerLogo](docs/readme_images/e-shop-logo.png)
 - A customised logo was created using LOGO.com which is a free logo generator.
 - This logo is positioned in the top left of the navigation bar. The logo is linked to the home page for ease of navigation for the user.
 
+
+
 **Navigation Bar**
+
+![Navbar](docs/readme_images/navbar.png)
 
 - The navigation bar is visible at the top of every page and includes links to the other pages.
 
 **Search Bar**
 
-![Search](docs/readme_images/features/search.png)
+![Search](docs/readme_images/searchbar.png)
 - The search bar displays above the nav bar.
 - On smaller screens, this bar becomes a search icon which when clicked will drop down the full bar.
 - Any searched word will match itself to any text in the product's title, or description and display the results on the product's page.
@@ -311,26 +316,26 @@ Custom Error Pages were created to give the user more information on the error a
 - The options to Sign up or Log in will change to the option to log out once a user has logged in.
 - Once a user has signed in, the 'My Profile' option becomes available in the User dropdown.
 
-![Logged In](docs/readme_images/features/logged_in.png)
+![Logged In](docs/readme_images/usericon.png)
 - If the superuser has signed in, more options such as 'Products Management' become available in the User dropdown.
 
-![user menu](docs/readme_images/features/superuser_login.png)
+![user menu](docs/readme_images/userdropdown.png)
 - The navigation bar is fully responsive, collapsing into a hamburger menu when the screen size becomes too small.
 - Hovering over the links will turn the font Black.
 
 **Bag Icon**
 
-![bag](docs/readme_images/features/bag.png)
+![bag](docs/readme_images/bagicon.png)
 - Located on the right side of the navbar next to the User icon is the bag Icon.
 - Once a product is added to the bag, a number displaying the total quantity of items appears, located at the top right of the bag icon.
 - As the user adds products to their bag, a toast message appears in the top right-hand corner of the screen informing the user that the item has been added, giving them a snapshot of the bag contents and the total cost of the bag.
 
-![bag total](docs/readme_images/features/bag_total.png)
+![bag total](docs/readme_images/bagtotal1.png)
 - Clicking the bag icon navigates the user to the shopping bag page which displays a summary of what's been added.
 
 ### Footer
 
-![footer](docs/readme_images/features/footer.png)
+![footer](docs/readme_images/footer.png)
 
 - The footer appears at the bottom of every page.
 - The footer section includes links to Facebook, Instagram, Twitter , linkedin , Github , and Google.
@@ -340,7 +345,7 @@ Custom Error Pages were created to give the user more information on the error a
 ### Home Page
 
 
-![Home page](docs/readme_images/features/home_page.png)
+![Home page](docs/readme_images/Homepage.png)
 
 - The home page includes an apealing layout which encourages the user to 'shop now' or to browse "All Products" with the message "CHECK OUT OUR LATEST COLLECTION" and a stylish online shopping background. 
 
@@ -348,15 +353,15 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Sign Up**
 
-![Sign Up](docs/readme_images/features/sign_up.png)
+![Sign Up](docs/readme_images/signupform.png)
 
 **Sign In**
 
-![Sign In](docs/readme_images/features/sign_in.png)
+![Sign In](docs/readme_images/signin.png)
 
 **Log Out**
 
-![Sign Out](docs/readme_images/features/sign_out.png)
+![Sign Out](docs/readme_images/signout.png)
 
 - Django allauth was installed and used to create the Sign up, Log in and Log out functionality. 
 - Success messages inform the user if they have logged in/ logged out successfully.
@@ -367,45 +372,52 @@ Custom Error Pages were created to give the user more information on the error a
 ### Profile
 **Delivery Details**
 
-![Delivery Details](docs/readme_images/features/delivery_info.png)
+![Delivery Details](docs/readme_images/userprofile.png)
 - The delivery details section stores the user's delivery address and phone number.
 - The information provided here is used to autofill the delivery address when placing an order.
 
 **Order History**
 
-![Order History](docs/readme_images/features/order_history.png)
+![Order History](docs/readme_images/orderhistory.png)
 - The order history section displays a list of every order the user has placed.
 - The table displays the order number, date it was ordered and the order total.
 - Clicking the order number will take the user to a summary page of that order.
 
 ### Products
 
-![all products](docs/readme_images/features/products_all.png)
+![all products](docs/readme_images/navbarallproducts.png)
 - When clicking the 'All products' link in the navbar the dropdown menu will show all the different categories.
 
-![Categories](docs/readme_images/features/categories.png)
+![all products](docs/readme_images/allproductspage.png)
 - The 'All Products' link will display a list of all products from the database.
 - Clicking any of the categories will filter the products to only show products from the category selected.
 - The category selected will display as the page heading.
 
-![products](docs/readme_images/features/products.png)
+![products](docs/readme_images/bycategory.png)
+![products](docs/readme_images/bedbathcategory.png)
 
 
-- Each product card shows an image of the product, its title, excerpt and price.
+- Each product card shows an image of the product, its title, rating, category and price.
 - If the user is a superuser, edit and delete buttons will appear at the bottom of the product card.
+
+![sort](docs/readme_images/productcard.png)
+
 - The products page is fully responsive, adjusting how many products are on each row depending on the user's screen size.
 - A sort box is located on the products page where users can sort all products by price in ascending or descending order and by title (A-Z).
 
-![sort](docs/readme_images/features/sort.png)
+![sort](docs/readme_images/sortproducts.png)
 
 ### Product Detail
 
-![Product Detail](docs/readme_images/features/product_detail.png)
+![Product Detail](docs/readme_images/productdetails.png)
 - When the user clicks on an individual product card they are taken to the full product details. The link is a bootstrap stretched link so clicking anywhere on the card will work.
-- The product detail page displays the product image, title, excerpt, price, product details.
+- The product detail page displays the product image, title, excerpt, price, rating, category and product details.
 - If the user is a superuser, edit and delete buttons will appear below these details.
 
 **Quantity Buttons**
+
+![Product Detail](docs/readme_images/quantitybuttons.png)
+
 - The quantity buttons are located underneath the product details and are used to add items to the bag.
 - The plus and minus buttons increase and decrease the input value.
 - If the value is set to 1 the minus quantity will be disabled. Respectively if the value is set to 99 the plus button is disabled.
@@ -414,9 +426,11 @@ Custom Error Pages were created to give the user more information on the error a
 - Clicking the 'Keep Shopping' button takes the user back to the store.
 
 ### Product Management
+![product management ](docs/readme_images/productmanagement.png)
+
 **Add Product**
 
-![add product](docs/readme_images/features/add_product.png)
+![add product](docs/readme_images/addproduct.png)
 - The add product page can be accessed by clicking the 'Add Product' button on the Product Management page or in the user dropdown menu, under the User . These options are only visible to superusers.
 - If a user tries to add a product (by changing the url) without being a superuser they are redirected to a custom 403 page.
 - The user must fill out all the fields that have an Asterix. If the form is submitted with any of these fields left blank or with just whitespace then an error message will appear above that particular field, notifying the user of the issue.
@@ -426,35 +440,45 @@ Custom Error Pages were created to give the user more information on the error a
 - Clicking the 'Add Product' button at the bottom of the form will create the product providing there are no errors on the form.
 -  The user will receive a success message notifying them that the product has been successfully added.
 
+![add product](docs/readme_images/prodaddedsuccess.png)
+
 **Edit Product**
 
-![edit product](docs/readme_images/features/edit_product.png)
+![edit product](docs/readme_images/productcard.png)
 - The superuser can choose to edit a Product by clicking the edit button on the product card or on the product detail page. 
 - The form opens with all fields populated with the original content.
+
+![edit product](docs/readme_images/editproduct1.png)
+
 - The image field displays a thumbnail of the existing image and has a checkbox option to remove it. Checking this will change the image to the default image.
 - If a user tries to add a product (by changing the url) without being a superuser they are redirected to a custom 403 page.
 - The superuser will receive a success message notifying them that the product has been successfully updated.
 
 **Delete Product**
 
-![delete product](docs/readme_images/features/delete_product.png)
+![delete product](docs/readme_images/deleteprod.png)
 - The superuser can choose to delete a Product by clicking the delete button on the product card or on the product detail page. 
 - The superuser is asked to confirm if they wish to delete the product or cancel.
 - The superuser will receive a success message notifying them that the product has been successfully deleted.
 
+![delete product](docs/readme_images/prod-del-success.png)
+
 ### Bag
 
-![shopping bag](docs/readme_images/features/shopping_bag.png)
+![shopping bag](docs/readme_images/shoppingbagicon.png)
+![shopping bag](docs/readme_images/shoppingbag.png)
 - When the user clicks on the shopping bag icon in the nav bar they are taken to the shopping bag page which shows the products which the user has added to their cart, unit price, quantity and subtotal.
 
 **Quantity Buttons**
+
+![Update Delete buttons](docs/readme_images/quantityadjust.png)
 - The quantity input box displays the product quantity the user has added to their bag.
 - The plus and minus buttons increase and decrease the input value.
 - If the value is set to 1 the minus quantity will be disabled. Respectively if the value is set to 99 the plus button is disabled.
 
 **Update and Delete Buttons**
 
-![Update Delete buttons](docs/readme_images/features/update_delete_buttons.png)
+![Update Delete buttons](docs/readme_images/deleteupdatebuttons.png)
 - Clicking the 'update' icon button saves any changes to the quantity and updates the item's subtotal.
 - Clicking the 'Bin' icon button removes the item completely from the user's bag.
 - If the user manually types in a negative number and clicks 'update', the item will be removed from the item from the bag.
@@ -468,9 +492,11 @@ Custom Error Pages were created to give the user more information on the error a
 
 ### Checkout 
 
-![checkout](docs/readme_images/features/checkout.png)
+![checkout](docs/readme_images/checkoutbutton.png)
 
 **Details**
+![checkout](docs/readme_images/checkout1.png)
+docs/readme_images/checkout1.png
 - Within the details section the user can fill out their contact details, delivery address, and card number.
 - If the user is a guest, a link to create an account or login will be present.
 - If the user is signed in a checkbox to save the delivery information can be checked.
@@ -483,6 +509,8 @@ Custom Error Pages were created to give the user more information on the error a
 - Clicking the product image in the summary will take the user to that product's detail page.
 
 **Payment**
+![checkout](docs/readme_images/completeorderbutton.png)
+
 - The card payment is handled by Stripe to ensure secure payment.
 - Incorrect card numbers will automatically show an invalid card number error.
 - A loading screen will appear when a payment is being processed to stop the user clicking away.
@@ -492,7 +520,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 **Confirmation**
 
-![order_confirmation](docs/readme_images/features/order_confirmation.png)
+![order_confirmation](docs/readme_images/checkoutsuccess.png)
 - Once the order has been processed the user is taken to the checkout success page.
 This page summarises the completed order.
 - An email will be sent to the user with their order confirmation
@@ -500,21 +528,24 @@ This page summarises the completed order.
 
 ### Testimonials
 
-![Testimonials](docs/readme_images/features/testimonials.png)
+![Testimonials](docs/readme_images/testimoniallink.png)
+![Testimonials](docs/readme_images/testimonialspage.png)
 - The testimonials page can be accessed by clicking the link in the nav bar.
 - When the user navigates to the Testimonials page they can see all testimonials left by previous clients. 
 - Each testimonial displays the Topic they relate to, the date and the user's name.
 
 **Add Testimonial**
 
-![Add Testimonial](docs/readme_images/features/add_testimonial.png)
+![Add Testimonial](docs/readme_images/addtestimonial.png)
 - When a logged-in user clicks on the "Add Testimonial" button on the Testimonials page, they can see a user-friendly form where they can add a new Testimonial to the site.
 - If the user is not logged in they are redirected to the log-in page.
 - The completed testimonial is automatically populated with the user's username and date underneath the body.
 
+![Add Testimonial](docs/readme_images/testimonialadded.png)
+
 **Edit Testimonial**
 
-![Edit Testimonial](docs/readme_images/features/edit_testimonial.png)
+![Edit Testimonial](docs/readme_images/edittestimonial.png)
 - The user is able to edit their own testimonials by clicking the edit button which display beside their own testimonial on the Testimonials Page.
 - The edit form fields are pre-populated with the existing testimonial text.
 - If a user tries to update a testimonial (by changing the url) without being signed in they are redirected to the log in page.
@@ -522,19 +553,25 @@ This page summarises the completed order.
 - The superuser can edit anyone's testimonial.
 - The user will receive a success message notifying them that the testimonial has been successfully updated.
 
+![Edit Testimonial](docs/readme_images/edittestisuces.png)
+
+
 **Delete Testimonial**
 
-![Delete Testimonial](docs/readme_images/features/delete_testimonial.png)
+![Delete Testimonial](docs/readme_images/testimonialspage.png)
+![Delete Testimonial](docs/readme_images/deletetestimonial.png)
 - The user can choose to delete their own testimonial by clicking the delete button which display beside their own testimonial on the Testimonials Page.
 - The user is asked to confirm if they wish to delete the testimonial or cancel.
 - The user will receive a success message notifying them that the testimonial has been successfully deleted.
 - If a user tries to delete a testimonial (by changing the url) without being signed in they are redirected to the log in page.
 - If a user tries to delete another user's testimonial (by changing the url) they receive a custom 403 error.
 - The superuser can delete anyone's testimonial.
+![Delete Testimonial](docs/readme_images/testi-deleted.png)
+
 
 ### Contact Form
-
-![Enquiry Form](docs/readme_images/features/enquiry_form.png)
+![Enquiry Form](docs/readme_images/contactlink.png)
+![Enquiry Form](docs/readme_images/contactform.png)
 - A user can open up the contact form by clicking on the "Enquire Now" button  by clicking the 'Contact' button in the Nav bar.
 - If the user is logged in, the email field is prepopulated with the user's email address. 
 - The form contains a drop down menu where the user can select the type of enquiry from a list so that the site owner knows what the enquiry is about.
@@ -543,54 +580,61 @@ This page summarises the completed order.
 
 ### Enquiries Dashboard
 
-![Enquiries Dashboard](docs/readme_images/features/enquiry_dashboard.png)
+![Enquiries Dashboard](docs/readme_images/enquiriesadmin.png)
+![Enquiries Dashboard](docs/readme_images/enquiriespage.png)
 - When the site owner is logged in, an Enquiries Management option appears in the User drop-down menu.
 - When the site owner navigates to the Enquiries Management page they can see a list of user enquiries sorted from newest to oldest.
 - Emails that have been read are greyed out.
 - When the site owner clicks on an enquiry they are taken to the individual enquiry detail.
 
-![Enquiry Detail](docs/readme_images/features/enquiry_detail.png)
+![Enquiry Detail](docs/readme_images/enquirydetail.png)
 - The site owner can choose to delete the enquiry or to go back to the list of enquiries.
 
 ### Customer Reviews 
 
-![Reviews](docs/readme_images/features/testimonials.png)
+![Reviews](docs/readme_images/reviewslink.png)
+![Reviews](docs/readme_images/reviews.png)
 - The Reviews page can be accessed by clicking the link in the nav bar.
 - When the user navigates to the Reviews page they can see all Reviews left by previous Customers. 
 - Each Reviews displays the Topic they relate to, the date and the user's name.
 
 **Add Review**
 
-![Add Reviews](docs/readme_images/features/add_testimonial.png)
+![Add Reviews](docs/readme_images/addreviewform.png)
 - When a logged-in user clicks on the "Add Reviews" button on the Nav bar link under More, they can see a user-friendly form where they can add a new Reviews to the site.
 - If the user is not logged in they are redirected to the log-in page.
 - The completed Review is automatically populated with the user's username and date underneath the body.
 
 **Edit Review**
 
-![Edit Review](docs/readme_images/features/edit_testimonial.png)
+![Edit Review](docs/readme_images/editreview.png)
 - The user is able to edit their own Reviews by clicking the edit button which display beside their own Reviews on the Reviews Page.
 - The edit form fields are pre-populated with the existing Review text.
 - If a user tries to update a Review (by changing the URL) without being signed in they are redirected to the log in page.
 - If a user tries to update another user's Review (by changing the url) they receive a custom 403 error.
 - The superuser can edit anyone's Reviews.
 - The user will receive a success message notifying them that the Review has been successfully updated.
+![Edit Review](docs/readme_images/reviewadded.png)
+
 
 **Delete Review**
 
-![Delete Review](docs/readme_images/features/delete_testimonial.png)
+![Delete Review](docs/readme_images/reviewseditdelete.png)
 - The user can choose to delete their own Review by clicking the delete button which display beside their own Review on the Reviews Page.
 - The user is asked to confirm if they wish to delete the Review or cancel.
 - The user will receive a success message notifying them that the Review has been successfully deleted.
+
+![Delete Review](docs/readme_images/reviewupdated.png)
 - If a user tries to delete a Review (by changing the url) without being signed in they are redirected to the log in page.
 - If a user tries to delete another user's Review (by changing the url) they receive a custom 403 error.
 - The superuser can delete anyone's Reviews.
 
 
+
 ### Error Pages
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
 
-![403 error](docs/readme_images/features/403_error.png)
+![404 error](docs/readme_images/errorpage404.png)
 
 
 - 400 Bad Request - E Shop is unable to handle this request.
