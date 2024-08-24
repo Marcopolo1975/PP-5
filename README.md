@@ -126,7 +126,7 @@ The site has a vibrant and clean design with the use of Orange and white color c
 #### Colour Scheme
 Colour palette from Coolors
 
-![Colour Scheme](docs/readme_images/colour_scheme.png)
+![Colour Scheme](docs/readme_images/e-shop-colors.png)
 
 The colour scheme of the site is mainly Orange and White. The colours chosen are quite neutral in order to showcase the Products with minimal distraction. 
 
