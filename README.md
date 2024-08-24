@@ -607,6 +607,8 @@ This page summarises the completed order.
 - If the user is not logged in they are redirected to the log-in page.
 - The completed Review is automatically populated with the user's username and date underneath the body.
 
+![Edit Review](docs/readme_images/reviewadded.png)
+
 **Edit Review**
 
 ![Edit Review](docs/readme_images/editreview.png)
@@ -616,7 +618,7 @@ This page summarises the completed order.
 - If a user tries to update another user's Review (by changing the url) they receive a custom 403 error.
 - The superuser can edit anyone's Reviews.
 - The user will receive a success message notifying them that the Review has been successfully updated.
-![Edit Review](docs/readme_images/reviewadded.png)
+![Edit Review](docs/readme_images/reviewupdated.png)
 
 
 **Delete Review**
@@ -626,7 +628,8 @@ This page summarises the completed order.
 - The user is asked to confirm if they wish to delete the Review or cancel.
 - The user will receive a success message notifying them that the Review has been successfully deleted.
 
-![Delete Review](docs/readme_images/reviewupdated.png)
+![Delete Review](docs/readme_images/reviewdeleted.png)
+
 - If a user tries to delete a Review (by changing the url) without being signed in they are redirected to the log in page.
 - If a user tries to delete another user's Review (by changing the url) they receive a custom 403 error.
 - The superuser can delete anyone's Reviews.
