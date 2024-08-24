@@ -119,6 +119,7 @@ The following user stories were scoped out of the project due to time constraint
 - As a shopper, I can add products to my saved items so that I can go back and view them at a later date.
 - As a shopper, I can reset my password if I forget my login details so that I can recover my account and stored information
 
+[Back to top](<#table-of-content>)
 
 ### Design
 
@@ -137,6 +138,8 @@ There is only one main static image on the site which is of a laptop and a shopp
 
 #### Fonts
 The Lato font is the main font used for the body of the website. This font was imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.
+
+[Back to top](<#table-of-content>)
 
 #### Wireframes
 
@@ -246,6 +249,8 @@ The Lato font is the main font used for the body of the website. This font was i
 ![Sign Out](docs/wireframes/signout-page.png)
 </details>
 
+[Back to top](<#table-of-content>)
+
 ## Agile Methodology
 Github projects was used to manage the development process using an agile approach. Please see link to project board [here](https://github.com/users/)
 
@@ -281,6 +286,7 @@ Custom Error Pages were created to give the user more information on the error a
 404 Page Not Found - The page you're looking for doesn't exist.
 500 Server Error - Due to an internal error we are unable to process this request.
 
+[Back to top](<#table-of-content>)
 
 ## Features
 
@@ -342,8 +348,10 @@ Custom Error Pages were created to give the user more information on the error a
 - There is a newsletter signup section powered by Mailchimp where the user can input their email address to signup to the monthly newsletter.
 - The Quick Links section has links to the main parts of the site including 'Contact Us' and 'Privacy Policy'.
 - On the right hand side of the footer there are Contact links like, telephone number Fax , Email adress and Business Adress.
-### Home Page
 
+[Back to top](<#table-of-content>)
+
+### Home Page
 
 ![Home page](docs/readme_images/Homepage.png)
 
@@ -425,6 +433,8 @@ Custom Error Pages were created to give the user more information on the error a
 - Clicking the 'Add to Bag' button takes the number in the input field and adds that amount of products to the bag.
 - Clicking the 'Keep Shopping' button takes the user back to the store.
 
+[Back to top](<#table-of-content>)
+
 ### Product Management
 ![product management ](docs/readme_images/productmanagement.png)
 
@@ -492,6 +502,8 @@ Custom Error Pages were created to give the user more information on the error a
 - Underneath the grand total users will find a message informing them of how much more they need to spend to receive free delivery if they haven't already met the free delivery threshold (€50). 
 - Beneath the grand total is two buttons. From here the user can either continue to the checkout or return to the products page by clicking 'Continue Shopping'.
 
+[Back to top](<#table-of-content>)
+
 ### Checkout 
 
 ![checkout](docs/readme_images/checkoutbutton.png)
@@ -527,6 +539,8 @@ docs/readme_images/checkout1.png
 This page summarises the completed order.
 - An email will be sent to the user with their order confirmation
 - At the end of the summary is a 'Keep Shopping' button that takes the user back to the Products page.
+
+[Back to top](<#table-of-content>)
 
 ### Testimonials
 
@@ -570,6 +584,7 @@ This page summarises the completed order.
 - The superuser can delete anyone's testimonial.
 ![Delete Testimonial](docs/readme_images/testi-deleted.png)
 
+[Back to top](<#table-of-content>)
 
 ### Contact Form
 ![Enquiry Form](docs/readme_images/contactlink.png)
@@ -591,6 +606,8 @@ This page summarises the completed order.
 
 ![Enquiry Detail](docs/readme_images/enquirydetail.png)
 - The site owner can choose to delete the enquiry or to go back to the list of enquiries.
+
+[Back to top](<#table-of-content>)
 
 ### Customer Reviews 
 
@@ -634,7 +651,7 @@ This page summarises the completed order.
 - If a user tries to delete another user's Review (by changing the url) they receive a custom 403 error.
 - The superuser can delete anyone's Reviews.
 
-
+[Back to top](<#table-of-content>)
 
 ### Error Pages
 Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
@@ -683,6 +700,8 @@ In order to build brand trust, a testimonial page for interior design services h
 
 The page footer also includes links to the privacy policy to inform users about how their data is being collected and processed.
 
+[Back to top](<#table-of-content>)
+
 **Sitemap and robots.txt**
 
 A sitemap file with a list of important page URLs was created to ensure that search engines are able to understand the site's structure and easily navigate through the site. This was made using xml-sitemaps.com.
@@ -700,7 +719,7 @@ For this site, a Facebook business page has been created for organic social medi
 ### Email Marketing
 Visitors to the site can sign up to the newsletter and do not need to have an account to do so. A signup box is included in the footer of the site. This allows the business to share news with customers and potential customers including new products/services and special offers. Mailchimp was used to create this service. 
 
-
+[Back to top](<#table-of-content>)
 
 ## Testing
 Testing and results can be found [here](/TESTING.md)
@@ -778,6 +797,7 @@ Add the following Config Vars in Heroku:
 
 The site is now live and operational.
 
+[Back to top](<#table-of-content>)
 
 ## AWS Set Up
 ### AWS S3 Bucket
@@ -901,6 +921,7 @@ AWS_S3_OBJECT_PARAMETERS = {
 - Then under 'Permissions' select the option 'Grant public-read access' and click upload.
 - Your static files and media files should be automatically linked from django to your S3 bucket.
 
+[Back to top](<#table-of-content>)
 
 ## Forking this repository
 - Locate the repository at this link [E Shop](https://github.com/).
@@ -955,6 +976,7 @@ To clone this repository follow the below steps:
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/): Used to create the site's privacy policy
 - [Mailchimp](https://mailchimp.com/?currency=EUR): Used to create the newsletter signup functionality.
 
+[Back to top](<#table-of-content>)
 
 ## Credits
 
