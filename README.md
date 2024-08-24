@@ -454,6 +454,8 @@ Custom Error Pages were created to give the user more information on the error a
 - If a user tries to add a product (by changing the url) without being a superuser they are redirected to a custom 403 page.
 - The superuser will receive a success message notifying them that the product has been successfully updated.
 
+![edit product](docs/readme_images/updateproductsuccess.png)
+
 **Delete Product**
 
 ![delete product](docs/readme_images/deleteprod.png)
