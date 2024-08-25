@@ -54,16 +54,16 @@
             <a class="nav-link text-secondary mr-3" href="#" id="testimonials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Testimonials
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="contact-link">
+            <div class="dropdown-menu border-0" aria-labelledby="testimonialst-link">
                 <a href="{% url 'testimonials' %}" class="dropdown-item">Testimonials</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-link text-secondary mr-3" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-secondary mr-3" href="#" id="contact-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Contact
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0" aria-labelledby="enquiry-link">
                 <a href="{% url 'contact' %}" class="dropdown-item">Make an Enquiry </a>
             </div>
         </li>
@@ -71,7 +71,7 @@
             <a class="font-weight-medium nav-link text-black mr-3" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             More
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+            <div class="dropdown-menu border-0" aria-labelledby="reviews-link">
                <a href="{% url 'reviews' %}" aria-label="Go to the reviews page" class="dropdown-item">Customers Reviews</a>
                {% if user.is_authenticated or user.is_superuser %}
                <a href="{% url 'add_review' %}" aria-label="Go to the add reviews page" class="dropdown-item">Add Review</a>
