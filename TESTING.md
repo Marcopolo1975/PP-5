@@ -337,33 +337,29 @@ No errors were found when passing my CSS files through the official [W3C CSS Val
 ### JSHINT
 All Javascript was passed through [Jshint](https://jshint.com/) with no issues.
 
-**Base**
-
-![base.html JS validation](docs/readme_images/js_validation/base.html_js.png)
-
 **Products**
 
-![products.html JS validation](docs/readme_images/js_validation/products_js.png)
+![products.html JS validation](docs/js_validation/products_js.png)
 
 **Profile**
 
-![profile JS validation](docs/readme_images/js_validation/profile_js.png)
+![profile JS validation](docs/js_validation/profile_js.png)
 
 **Checkout**
 
-![Checkout JS validation](docs/readme_images/js_validation/stripe_elements.js_js.png)
+![Checkout JS validation](docs/js_validation/stripe_elements.js_js.png)
 
 **Bag**
 
-![Bag JS validation](docs/readme_images/js_validation/bag.html_js.png)
+![Bag JS validation](docs/js_validation/bag.html_js.png)
 
 **Quantity Input**
 
-![Quantity Input JS validation](docs/readme_images/js_validation/quantity_input_script.html_js.png)
+![Quantity Input JS validation](docs/js_validation/quantity_input_script.html_js.png)
 
 **Image Selector**
 
-![Image Selector JS validation](docs/readme_images/js_validation/add_image_js.png)
+![Image Selector JS validation](docs/js_validation/add_image_js.png)
 
 
 ### Python Validation - Pycodestyle
