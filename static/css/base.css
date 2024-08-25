@@ -31,6 +31,10 @@ body {
     width: 1.5rem;
 }
 
+.logo-image {
+    width: 200px;
+}
+
 .logo-font {
     text-transform: uppercase;
 }
@@ -229,7 +233,9 @@ input[name='q']::placeholder {
 *           FOOTER             *
 *                              *
 *******************************/
-
+footer {
+    background-color: whitesmoke;
+}
 .text-footer {
     color: #fd5f00;
 }
