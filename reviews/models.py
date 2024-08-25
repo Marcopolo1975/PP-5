@@ -11,7 +11,6 @@ class Reviews(models.Model):
     class Meta:
         verbose_name_plural = "Reviews"
 
-   
     name = models.CharField(max_length=20)
     image = models.ImageField(
                               upload_to="reviews_images/",

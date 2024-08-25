@@ -4,10 +4,11 @@ from django.views import generic
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from .models import Testimonial 
+from .models import Testimonial
 from django.urls import reverse_lazy
-from .forms import  TestimonialForm 
-   
+from .forms import TestimonialForm
+
+
 class Testimonials(generic.ListView):
     """ This view is used to display all testimonials """
     model = Testimonial

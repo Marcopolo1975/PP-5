@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 class Testimonial(models.Model):
     """Model for Testimonial"""
     name = models.ForeignKey(
-    User, on_delete=models.CASCADE, related_name="testimonials")
+     User, on_delete=models.CASCADE, related_name="testimonials")
     product_name = models.ForeignKey(
         Product, on_delete=models.CASCADE,
         related_name="products_name", null=True,

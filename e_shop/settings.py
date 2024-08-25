@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 from pathlib import Path
 import dj_database_url
-if os.path.isfile('env.py'):import env
+if os.path.isfile('env.py'): import env
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', ".herokuapp.com", 'e-shop-app.herokuapp.com', '8000-marcopolo1975-eshop-rkfhvuso9tc.ws.codeinstitute-ide.net', 'localhost']
+ALLOWED_HOSTS = ['localhost', ".herokuapp.com", 'e-shop-app.herokuapp.com', '8000-marcopolo1975-eshop-fm57pop6z3p.ws.codeinstitute-ide.net', 'localhost']
 
 
 # Application definition
@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'contact',
     'reviews',
 
-     # Other
+    # Other
     'crispy_forms',
     'storages',
 ]
@@ -76,7 +76,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
              os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'templates', 'allauth'),
+             os.path.join(BASE_DIR, 'templates', 'allauth'),
             ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -119,7 +119,6 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'e_shop.wsgi.application'
-
 
 
 if 'DATABASE_URL' in os.environ:
@@ -168,7 +167,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
@@ -179,7 +177,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
-     # Cache control
+    # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
@@ -191,7 +189,6 @@ if 'USE_AWS' in os.environ:
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = 's3.amazonaws.com/e.shop'
-    
 
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'

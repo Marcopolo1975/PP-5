@@ -1,7 +1,7 @@
 """imports for admin page"""
 
 from django.contrib import admin
-from .models import  Testimonial
+from .models import Testimonial
 
 
 class TestimonialAdmin(admin.ModelAdmin):
@@ -11,5 +11,6 @@ class TestimonialAdmin(admin.ModelAdmin):
         'product_name',
         'created_on'
     )
+
 
 admin.site.register(Testimonial, TestimonialAdmin)
