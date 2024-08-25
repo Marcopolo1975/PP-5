@@ -325,13 +325,13 @@ All forms which include an image upload field show the same error below. This re
 No errors were found when passing my CSS files through the official [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
 *base.css*
-![base.ccs validation](docs/readme_images/base_css_validation.png)
+![base.ccs validation](docs/readme_images/basecsstest.png)
 
 *checkout.css*
-![checkout.ccs validation](docs/readme_images/checkout_css_validation.png)
+![checkout.ccs validation](docs/readme_images/checkoutcsstest.png)
 
 *profile.css*
-![profile.ccs validation](docs/readme_images/profile_css_validation.png)
+![profile.ccs validation](docs/readme_images/profilecsstest.png)
 
 
 ### JSHINT
@@ -373,7 +373,7 @@ The only errors displayed (as per below screenshot) can be ignored. The majority
 
 I have ignored the the formatting errors related to env.py as they relate to my Secret Keys and Database URL being to long. This file is not committed to github.
 
-![Python Linter Errors](docs/readme_images/python_linter_errors.png)
+![Python Linter Errors](docs/readme_images/pythontest.png) ![Python Linter Errors](docs/readme_images/pythontest1.png)
 
 ### Lighthouse
 
