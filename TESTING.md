@@ -814,7 +814,7 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 
 ## Fixed Bugs
 
-** Order Confirmation Email **
+**Order Confirmation Email**
 
 After setting up the sending original email functionality, order confirmation emails were not sent. however, webhooks were working with an error(500). 
 After a Stripe update on November 16, 2022, the charges attribute is no longer available directly from the payment intent.
