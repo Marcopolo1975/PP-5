@@ -814,6 +814,96 @@ The Website was tested on Google Chrome, Firefox, Safari browsers with no issues
 
 ## Fixed Bugs
 
+**Deployment to Heroku**
+
+while deployment on heroku i i faced an complexed error. it was constantly showing up following error when attempting to deploy. 
+
+**error**
+ from storages.backends.s3boto3 import S3Boto3Storage
+         File "/app/.heroku/python/lib/python3.12/site-packages/storages/backends/s3boto3.py", line 3, in <module>
+           from storages.backends.s3 import S3File as S3Boto3StorageFile  # noqa
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         File "/app/.heroku/python/lib/python3.12/site-packages/storages/backends/s3.py", line 41, in <module>
+           raise ImproperlyConfigured("Could not load Boto3's S3 bindings. %s" % e)
+       django.core.exceptions.ImproperlyConfigured: Could not load Boto3's S3 bindings. No module named 'urllib3.packages.six.moves'
+ !     Error while running '$ python manage.py collectstatic --noinput'.
+       See traceback above for details.
+       You may need to update application code to resolve this error.
+       Or, you can disable collectstatic for this application:
+          $ heroku config:set DISABLE_COLLECTSTATIC=1
+       https://devcenter.heroku.com/articles/django-assets
+ !     Push rejected, failed to compile Python app.
+ !     Push failed
+
+then i have found the  versions conflict in installed requirements in Django project. 
+so the all requirements were checked for versions conflicts in requirements,
+replaced : boto3==1.4.4 ,botocore==1.5.95 with boto3==1.12.42,botocore==1.15.42
+replaced : s3transfer==0.1.13 with s3transfer==0.3.3
+replaced : urllib3==1.26.0 with urllib3==1.24
+installed : docutils==0.15.2
+
+After installing updated Requirements, deployment to Heroku was successful.
+
+**Requirements.txt Befor**
+
+asgiref==3.8.1
+boto3==1.4.4
+botocore==1.5.95
+chardet==3.0.4
+dj-database-url==0.5.0
+Django==3.2.25
+django-allauth==0.51.0
+django-countries==7.2.1
+django-crispy-forms==1.11.0
+django-environ==0.11.2
+django-storages==1.14.4
+gunicorn==22.0.0
+idna==2.8
+jmespath==0.10.0
+oauthlib==3.2.2
+pillow==10.3.0
+psycopg2==2.9.9
+psycopg2-binary==2.9.9
+PyJWT==2.8.0
+python3-openid==3.2.0
+pytz==2024.1
+requests-oauthlib==2.0.0
+s3transfer==0.1.13
+sqlparse==0.5.0
+stripe==9.9.0
+urllib3==1.26.0
+
+**requirements.txt After**
+
+asgiref==3.8.1
+boto3==1.12.42
+botocore==1.15.42
+chardet==3.0.4
+dj-database-url==0.5.0
+Django==3.2.25
+django-allauth==0.51.0
+django-countries==7.2.1
+django-crispy-forms==1.11.0
+django-environ==0.11.2
+django-storages==1.14.4
+docutils==0.15.2
+gunicorn==22.0.0
+idna==2.8
+jmespath==0.10.0
+oauthlib==3.2.2
+pillow==10.3.0
+psycopg2==2.9.9
+psycopg2-binary==2.9.9
+PyJWT==2.8.0
+python3-openid==3.2.0
+pytz==2024.1
+requests-oauthlib==2.0.0
+s3transfer==0.3.3
+sqlparse==0.5.0
+stripe==9.9.0
+urllib3==1.24
+
+
 **Order Confirmation Email**
 
 After setting up the sending original email functionality, order confirmation emails were not sent. however, webhooks were working with an error(500). 
